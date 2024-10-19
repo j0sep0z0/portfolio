@@ -1,4 +1,4 @@
-import { Contact } from 'lucide-react'
+import { Contact, Scale } from 'lucide-react'
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
@@ -18,16 +18,28 @@ export default function Home() {
         </div>
       </div>
       <div className='bg-gray-100 flex rounded justify-center flex-wrap w-full my-4'>
-        <Button variant='link' className='text-xl'>
+        <Button
+          variant='link'
+          className='text-xl hover:scale-110 active:scale-100 transition-transform duration-150'
+        >
           Experience
         </Button>
-        <Button variant='link' className='text-xl'>
+        <Button
+          variant='link'
+          className='text-xl hover:scale-110 active:scale-100 transition-transform duration-150'
+        >
           Projects
         </Button>
-        <Button variant='link' className='text-xl'>
+        <Button
+          variant='link'
+          className='text-xl hover:scale-110 active:scale-100 transition-transform duration-150'
+        >
           About Me
         </Button>
-        <Button variant='link' className='text-xl'>
+        <Button
+          variant='link'
+          className='text-xl hover:scale-110 active:scale-100 transition-transform duration-150'
+        >
           Contact
         </Button>
       </div>
