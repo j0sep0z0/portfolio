@@ -88,11 +88,11 @@ export default function Home() {
                   [ September 2024 – Present | Remote | Valencia, Spain ]
                 </p>
                 <p className='my-2'>
-                  Development of "GoPass," a secure platform aimed at combating
-                  the growing issue of illegal ticket resale in Argentine
-                  football. This innovative project ensures the authenticity of
-                  each ticket, providing a trustworthy solution for fans and
-                  organizers alike.
+                  Development of &quot;GoPass&quot;, a secure platform aimed at
+                  combating the growing issue of illegal ticket resale in
+                  Argentine football. This innovative project ensures the
+                  authenticity of each ticket, providing a trustworthy solution
+                  for fans and organizers alike.
                 </p>
                 <p className='my-2 self-start'>
                   React, TypeScript, Redux Toolkit, Axios, Tailwind CSS, Git,
