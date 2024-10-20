@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { FaGithub } from 'react-icons/fa'
 import { FaExternalLinkAlt } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
 import { GrZoomIn } from 'react-icons/gr'
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
@@ -37,7 +38,11 @@ export default function Home() {
             <h1 className='text-2xl text-center'>FULL SATCK WEB DEVELOPER</h1>
           </div>
         </div>
-        <div className='bg-gray-100 flex rounded justify-center flex-wrap w-full my-4'>
+        <div className='flex justify-center items-center p-2'>
+          <FaLinkedin className='w-6 h-6 mx-4' />
+          <FaGithub className='w-6 h-6 mx-4' />
+        </div>
+        <div className='bg-gray-100 flex rounded justify-center flex-wrap w-full mb-4'>
           <Button
             variant='link'
             className='text-xl hover:scale-110 active:scale-100 transition-transform duration-150'
@@ -97,10 +102,10 @@ export default function Home() {
                   href='https://github.com/igrowker/i003-gopass-front'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-blue-800 my-2 text-xl bg-gray-100 hover:bg-gray-400 hover:text-white rounded py-1 px-2 flex self-end items-center'
+                  className='text-gray-800 my-2 text-lg bg-gray-100 hover:bg-gray-400 hover:text-white hover:scale-110 rounded py-1 px-2 flex self-end items-center'
                 >
-                  GoPass
-                  <FaExternalLinkAlt className='h-4 w-4 text-blue-800 ml-2' />
+                  Code
+                  <FaExternalLinkAlt className='h-3 w-3 text-gray-800 ml-4' />
                 </Link>
               </div>
             </div>
@@ -144,15 +149,30 @@ export default function Home() {
                   and services, and offers a complete history of the activities
                   performed.
                 </p>
-                <Link
-                  href='https://daily-planner-site.netlify.app/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='text-blue-800 my-2 text-xl bg-gray-100 hover:bg-gray-400 hover:text-white rounded py-1 px-2 flex self-end items-center'
-                >
-                  Daily Planner
-                  <FaExternalLinkAlt className='h-4 w-4 text-blue-800 ml-2' />
-                </Link>
+                <p className='my-2 self-start'>
+                  React, Tailwind CSS, Node.js, Express.js, MongoDB, Mocha,
+                  Chai.js, Git, GitHub.
+                </p>
+                <div className='flex justify-center items-center self-end hover:text-white'>
+                  <Link
+                    href='https://github.com/j0sep0z0/daily-planner'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-gray-800 my-2 mr-2 text-lg bg-gray-100 hover:bg-gray-400 hover:text-white rounded py-1 px-2 flex items-center'
+                  >
+                    Code
+                    <FaExternalLinkAlt className='h-3 w-3 text-gray-800 ml-2' />
+                  </Link>
+                  <Link
+                    href='https://daily-planner-site.netlify.app/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-gray-800 my-2 text-lg bg-gray-100 hover:bg-gray-400 hover:text-white rounded py-1 px-2 flex items-center'
+                  >
+                    Visit Site
+                    <FaExternalLinkAlt className='h-3 w-3 text-gray-800 ml-2' />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
