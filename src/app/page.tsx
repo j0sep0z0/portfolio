@@ -9,7 +9,6 @@ import { FaLinkedin } from 'react-icons/fa'
 import { GrZoomIn } from 'react-icons/gr'
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Button } from '@/components/ui/button'
 
 export default function Home() {
   const [isImageExpanded, setIsImageExpanded] = useState(false)
@@ -175,9 +174,9 @@ export default function Home() {
               </h1>
               <div className='my-4 shadow-xl bg-stone rounded py-2 px-4 flex flex-col justify-center items-center'>
                 <p className='my-4'>
-                  Hello, I'm Jose, a creative developer passionate about turning
-                  ideas into smooth and engaging user experiences. I enjoy
-                  creating efficient web applications that are not only
+                  Hello, I&lsquo;m Jose, a creative developer passionate about
+                  turning ideas into smooth and engaging user experiences. I
+                  enjoy creating efficient web applications that are not only
                   functional but also provide a visually appealing experience
                   focused on user needs.
                   <br />
@@ -189,11 +188,11 @@ export default function Home() {
                   exploring modern design approaches.
                   <br />
                   <br />
-                  When I'm not programming, you can find me enjoying outdoor
-                  activities, playing sports or sharing moments with friends. I
-                  value these experiences very much, as they help me to recharge
-                  my batteries and maintain a balance between personal and
-                  professional life.
+                  When I&lsquo;m not programming, you can find me enjoying
+                  outdoor activities, playing sports or sharing moments with
+                  friends. I value these experiences very much, as they help me
+                  to recharge my batteries and maintain a balance between
+                  personal and professional life.
                 </p>
                 <p className='my-2 self-start'>
                   Technical Skills:

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-import { gruppo, montserrat } from './fonts/fonts'
+import { montserrat } from './fonts/fonts'
 import './globals.css'
 
 export const metadata: Metadata = {
