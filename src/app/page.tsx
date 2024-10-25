@@ -183,8 +183,8 @@ export default function Home() {
                   In my work, I prioritize clean and maintainable code, and I
                   always seek to offer scalable and accessible solutions. I like
                   to be constantly learning and enjoy keeping up with web
-                  development trends, whether it's mastering new frameworks or
-                  exploring modern design approaches.
+                  development trends, whether it&lsquo;s mastering new
+                  frameworks or exploring modern design approaches.
                   <br />
                   <br />
                   When I&lsquo;m not programming, you can find me enjoying
