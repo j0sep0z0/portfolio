@@ -9,7 +9,6 @@ import { FaLinkedin } from 'react-icons/fa'
 import { GrZoomIn } from 'react-icons/gr'
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Button } from '@/components/ui/button'
 
 export default function Home() {
   const [isImageExpanded, setIsImageExpanded] = useState(false)
@@ -27,7 +26,7 @@ export default function Home() {
   return (
     <>
       <header onClick={resetImageSize}>
-        <div className='bg-gray-400 flex flex-wrap items-center w-full rounded justify-center p-4'>
+        <div className='bg-stone flex flex-wrap items-center  rounded justify-center p-4'>
           <Avatar className='mx-4 h-32 w-32'>
             <AvatarImage src='./j0sep0z0-gritty.jpg' alt='profile photo' />
             <AvatarFallback>JP</AvatarFallback>
@@ -38,48 +37,37 @@ export default function Home() {
             <h1 className='text-2xl text-center'>FULL SATCK WEB DEVELOPER</h1>
           </div>
         </div>
-        <div className='flex justify-center items-center p-2'>
-          <FaLinkedin className='w-6 h-6 mx-4' />
-          <FaGithub className='w-6 h-6 mx-4' />
-        </div>
-        <div className='bg-gray-100 flex rounded justify-center flex-wrap w-full mb-4'>
-          <Button
-            variant='link'
-            className='text-xl hover:scale-110 active:scale-100 transition-transform duration-150'
+        <div className='flex justify-center items-center p-2 bg-white'></div>
+        <div className='flex bg-stone rounded justify-center items-center flex-wrap p-2'>
+          <Link
+            className='w-6 h-6 mx-6'
+            href={'https://www.linkedin.com/in/j0sep0z0'}
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            Experience
-          </Button>
-          <Button
-            variant='link'
-            className='text-xl hover:scale-110 active:scale-100 transition-transform duration-150'
+            <FaLinkedin className='w-6 h-6' />
+          </Link>
+          <Link
+            className='w-6 h-6 mx-6'
+            href={'https://github.com/j0sep0z0'}
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            Projects
-          </Button>
-          <Button
-            variant='link'
-            className='text-xl hover:scale-110 active:scale-100 transition-transform duration-150'
-          >
-            About Me
-          </Button>
-          <Button
-            variant='link'
-            className='text-xl hover:scale-110 active:scale-100 transition-transform duration-150'
-          >
-            Contact
-          </Button>
+            <FaGithub className='w-6 h-6' />
+          </Link>
         </div>
       </header>
-      <main onClick={resetImageSize}>
+      <main onClick={resetImageSize} className='grid grid-cols-1'>
         <section
           id='experience'
-          className='flex justify-center mt-16 items-center'
+          className='flex justify-center mt-16  items-center'
         >
           <div className='sm:max-w-[40rem]'>
             <div className='flex flex-col justify-center items-center'>
-              <h1 className='text-xl shadow-xl text-white py-2 px-4 rounded self-start bg-gray-400 w-full'>
+              <h1 className='text-xl shadow-xl bg-stone py-2 px-4 rounded self-star w-full'>
                 Experience
               </h1>
-              <div className='my-4 bg-gray-200 shadow-xl rounded py-2 px-4 flex flex-col justify-center items-center'>
+              <div className='my-4 shadow-xl bg-stone rounded py-2 px-4 flex flex-col justify-center items-center'>
                 <h1 className='self-start my-2 text-xl'>Front End Developer</h1>
                 <p className='self-start text-lg font'>
                   Igrowker - Acelerando Juniors IT
@@ -102,10 +90,10 @@ export default function Home() {
                   href='https://github.com/igrowker/i003-gopass-front'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-gray-800 my-2 text-lg bg-gray-100 hover:bg-gray-400 hover:text-white hover:scale-110 rounded py-1 px-2 flex self-end items-center'
+                  className='my-2 text-lg rounded py-1 px-2 flex self-end items-center bg-alabaster hover:scale-110 active:scale-100 transition-transform duration-150'
                 >
                   Code
-                  <FaExternalLinkAlt className='h-3 w-3 text-gray-800 ml-4' />
+                  <FaExternalLinkAlt className='h-3 w-3 ml-4' />
                 </Link>
               </div>
             </div>
@@ -113,14 +101,14 @@ export default function Home() {
         </section>
         <section
           id='projects'
-          className='flex justify-center mt-16 items-center'
+          className='flex justify-center mt-16  items-center'
         >
           <div className='sm:max-w-[40rem]'>
             <div className='flex flex-col justify-center items-center'>
-              <h1 className='text-xl shadow-xl text-white py-2 px-4 rounded self-start bg-gray-400 w-full'>
+              <h1 className='text-xl shadow-xl py-2 px-4 rounded self-start bg-stone w-full'>
                 Projects
               </h1>
-              <div className='my-4 bg-gray-200 shadow-xl rounded py-2 px-4 flex flex-col justify-center items-center'>
+              <div className='my-4 bg-stone shadow-xl rounded py-2 px-4 flex flex-col justify-center items-center'>
                 <Image
                   width={1200}
                   height={600}
@@ -132,7 +120,7 @@ export default function Home() {
                   onClick={toggleImageSize}
                 />
                 <GrZoomIn
-                  className='inset-0 h-5 w-5 text-gray-800 cursor-pointer'
+                  className='inset-0 h-5 w-5 cursor-pointer'
                   onClick={toggleImageSize}
                 />
                 <h1 className='self-start my-2 text-xl'>Daily Planner</h1>
@@ -153,26 +141,66 @@ export default function Home() {
                   React, Tailwind CSS, Node.js, Express.js, MongoDB, Mocha,
                   Chai.js, Git, GitHub.
                 </p>
-                <div className='flex justify-center items-center self-end hover:text-white'>
+                <div className='flex justify-center flex-wrap items-center self-end'>
                   <Link
                     href='https://github.com/j0sep0z0/daily-planner'
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='text-gray-800 my-2 mr-2 text-lg bg-gray-100 hover:bg-gray-400 hover:text-white rounded py-1 px-2 flex items-center'
+                    className='my-2 mr-2 text-lg rounded py-1 px-2 flex items-center bg-alabaster hover:scale-110 active:scale-100 transition-transform duration-150'
                   >
                     Code
-                    <FaExternalLinkAlt className='h-3 w-3 text-gray-800 ml-2' />
+                    <FaExternalLinkAlt className='h-3 w-3 ml-2' />
                   </Link>
                   <Link
                     href='https://daily-planner-site.netlify.app/'
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='text-gray-800 my-2 text-lg bg-gray-100 hover:bg-gray-400 hover:text-white rounded py-1 px-2 flex items-center'
+                    className='my-2 text-lg py-1 px-2 flex items-center bg-alabaster rounded hover:scale-110 active:scale-100 transition-transform duration-150'
                   >
                     Visit Site
-                    <FaExternalLinkAlt className='h-3 w-3 text-gray-800 ml-2' />
+                    <FaExternalLinkAlt className='h-3 w-3 ml-2' />
                   </Link>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id='about' className='flex justify-center mt-16 items-center'>
+          <div className='sm:max-w-[40rem]'>
+            <div className='flex flex-col justify-center items-center'>
+              <h1 className='text-xl shadow-xl bg-stone py-2 px-4 rounded self-star w-full'>
+                About Me
+              </h1>
+              <div className='my-4 shadow-xl bg-stone rounded py-2 px-4 flex flex-col justify-center items-center'>
+                <p className='my-4'>
+                  Hello, I&lsquo;m Jose, a creative developer passionate about
+                  turning ideas into smooth and engaging user experiences. I
+                  enjoy creating efficient web applications that are not only
+                  functional but also provide a visually appealing experience
+                  focused on user needs.
+                  <br />
+                  <br />
+                  In my work, I prioritize clean and maintainable code, and I
+                  always seek to offer scalable and accessible solutions. I like
+                  to be constantly learning and enjoy keeping up with web
+                  development trends, whether it&lsquo;s mastering new
+                  frameworks or exploring modern design approaches.
+                  <br />
+                  <br />
+                  When I&lsquo;m not programming, you can find me enjoying
+                  outdoor activities, playing sports or sharing moments with
+                  friends. I value these experiences very much, as they help me
+                  to recharge my batteries and maintain a balance between
+                  personal and professional life.
+                </p>
+                <p className='my-2 self-start'>
+                  Technical Skills:
+                  <br />
+                  <br />
+                  JavaScript (JS), TypeScript, Node.js, React, Next.js, Redux
+                  Toolkit, Tailwind CSS, Express.js, HTML, CSS, Vite, npm,
+                  MongoDB, Mocha, Chai.js, Git, GitHub, VS Code, Figma.
+                </p>
               </div>
             </div>
           </div>
@@ -180,7 +208,7 @@ export default function Home() {
       </main>
       <footer
         onClick={resetImageSize}
-        className='bg-gray-400 w-full rounded h-24 mt-16 p-4'
+        className='bg-stone w-full rounded h-24 mt-16 p-4'
       ></footer>
     </>
   )

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-import { gruppo } from './fonts/fonts'
+import { montserrat } from './fonts/fonts'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${gruppo.className} antialiased text-gray-800 m-1`}>
+      <body className={`${montserrat.className} antialiased m-2`}>
         {children}
       </body>
     </html>

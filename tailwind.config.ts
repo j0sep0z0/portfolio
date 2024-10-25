@@ -12,6 +12,8 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        stone: '#d5ddd9',
+        alabaster: '#e7ebda',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -22,4 +24,5 @@ const config: Config = {
   },
   plugins: [require('tailwindcss-animate')],
 }
+
 export default config
