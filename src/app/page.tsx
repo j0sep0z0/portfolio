@@ -12,7 +12,6 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 export default function Home() {
   const [isImageExpanded, setIsImageExpanded] = useState(false)
-  const [activeSection, setActiveSection] = useState('')
 
   const toggleImageSize = () => {
     setIsImageExpanded(!isImageExpanded)
