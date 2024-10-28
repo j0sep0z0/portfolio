@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -11,6 +12,7 @@ import { GrZoomIn } from 'react-icons/gr'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 export default function Home() {
+  const t = useTranslations('HomePage')
   const [isImageExpanded, setIsImageExpanded] = useState(false)
 
   const toggleImageSize = () => {
@@ -65,7 +67,7 @@ export default function Home() {
           <div className='sm:max-w-[40rem]'>
             <div className='flex flex-col justify-center items-center'>
               <h1 className='text-xl shadow-xl bg-stone py-2 px-4 rounded self-star w-full'>
-                Experience
+                {t('experience')}
               </h1>
               <div className='my-4 shadow-xl bg-stone rounded py-2 px-4 flex flex-col justify-center items-center'>
                 <h1 className='self-start my-2 text-xl'>Front End Developer</h1>
@@ -82,7 +84,10 @@ export default function Home() {
                   authenticity of each ticket, providing a trustworthy solution
                   for fans and organizers alike.
                 </p>
-                <p className='my-2 self-start'>
+                <p className='mt-4 mb-2 self-start'>
+                  Technologies used:
+                  <br />
+                  <br />
                   React, TypeScript, Redux Toolkit, Axios, Tailwind CSS, Git,
                   GitHub.
                 </p>
@@ -137,7 +142,10 @@ export default function Home() {
                   and services, and offers a complete history of the activities
                   performed.
                 </p>
-                <p className='my-2 self-start'>
+                <p className='mt-4 mb-2 self-start'>
+                  Technologies used:
+                  <br />
+                  <br />
                   React, Tailwind CSS, Node.js, Express.js, MongoDB, Mocha,
                   Chai.js, Git, GitHub.
                 </p>
