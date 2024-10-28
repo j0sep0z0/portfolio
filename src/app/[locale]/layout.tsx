@@ -8,6 +8,9 @@ import { routing } from '@/i18n/routing'
 
 import { montserrat } from '../fonts/fonts'
 
+// Define un tipo para los locales permitidos
+type Locale = 'en' | 'es'
+
 export const metadata: Metadata = {
   title: 'Jose Pozo',
   description: 'Portfolio of Jose Pozo',
@@ -21,7 +24,7 @@ export default async function RootLayout({
   params: { locale: string }
 }) {
   // Verificar si el `locale` es válido
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as Locale)) {
     notFound()
   }
 
