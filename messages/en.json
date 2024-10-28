@@ -1,5 +1,22 @@
 {
   "HomePage": {
-    "experience": "Experience"
+    "aboutMe": "About me",
+    "dateGoPass": "[ September 2024 – Present | Remote | Valencia, Spain ]",
+    "descriptionAboutMe1": "Hello, I'm Jose, a creative developer passionate about turning ideas into smooth and engaging user experiences. I enjoy creating efficient web applications that are not only functional but also provide a visually appealing experience focused on user needs.",
+    "descriptionAboutMe2": "In my work, I prioritize clean and maintainable code, and I always seek to offer scalable and accessible solutions. I like to be constantly learning and enjoy keeping up with web development trends, whether it's mastering new frameworks or exploring modern design approaches.",
+    "descriptionAboutMe3": "When I'm not programming, you can find me enjoying outdoor activities, playing sports or sharing moments with friends. I value these experiences very much, as they help me to recharge my batteries and maintain a balance between personal and professional life.",
+    "descriptionDailyPlanner": "Designed to optimize the daily management of salons and beauty centers. It allows scheduling appointments, managing clients and services, and offers a complete history of the activities performed.",
+    "descriptionGoPass": "Development of \"GoPass\", a secure platform aimed at combating the growing issue of illegal ticket resale in Argentine football. This innovative project ensures the authenticity of each ticket, providing a trustworthy solution for fans and organizers alike.",
+    "experience": "Experience",
+    "mySoftSkills": "Adaptability, Communication, Creativity, Proactivity, Teamwork, Troubleshooting.",
+    "myTechnologies": "JavaScript (JS), TypeScript, Node.js, React, Next.js, Redux Toolkit, Tailwind CSS, Express.js, HTML, CSS, Vite, npm, MongoDB, Mocha, Chai.js, Git, GitHub, VS Code, Figma.",
+    "projects": "Projects",
+    "secondTitleDailyPlanner": "Final Project of the Full Stack Web Development Bootcamp",
+    "softSkills": "Soft Skills:",
+    "technicalSkills": "Technical Skills:",
+    "technologiesDailyPlanner": "React, Tailwind CSS, Node.js, Express.js, MongoDB, Mocha, Chai.js, Git, GitHub.",
+    "technologiesGoPass": "React, TypeScript, Redux Toolkit, Axios, Tailwind CSS, Git, GitHub.",
+    "technologiesUsed": "Tecnologies used:",
+    "thirdTitleDailyPlanner": "[ Currently improving the app and implementing TypeScript and Redux ]"
   }
 }
