@@ -74,22 +74,13 @@ export default function Home() {
                 <p className='self-start text-lg font'>
                   Igrowker - Acelerando Juniors IT
                 </p>
-                <p className='self-start my-2'>
-                  [ September 2024 – Present | Remote | Valencia, Spain ]
-                </p>
-                <p className='my-2'>
-                  Development of &quot;GoPass&quot;, a secure platform aimed at
-                  combating the growing issue of illegal ticket resale in
-                  Argentine football. This innovative project ensures the
-                  authenticity of each ticket, providing a trustworthy solution
-                  for fans and organizers alike.
-                </p>
+                <p className='self-start my-2'>{t('dateGoPass')}</p>
+                <p className='mt-4 mb-2'>{t('descriptionGoPass')}</p>
                 <p className='mt-4 mb-2 self-start'>
-                  Technologies used:
+                  {t('technologiesUsed')}
                   <br />
                   <br />
-                  React, TypeScript, Redux Toolkit, Axios, Tailwind CSS, Git,
-                  GitHub.
+                  {t('technologiesGoPass')}
                 </p>
                 <Link
                   href='https://github.com/igrowker/i003-gopass-front'
@@ -111,14 +102,14 @@ export default function Home() {
           <div className='sm:max-w-[40rem]'>
             <div className='flex flex-col justify-center items-center'>
               <h1 className='text-xl shadow-xl py-2 px-4 rounded self-start bg-stone w-full'>
-                Projects
+                {t('projects')}
               </h1>
               <div className='my-4 bg-stone shadow-xl rounded py-2 px-4 flex flex-col justify-center items-center'>
                 <Image
                   width={1200}
                   height={600}
                   src='/daily-planner-views.png'
-                  alt='Daily Planner Views'
+                  alt='image of the daily planner app'
                   className={`rounded my-2 transition-transform duration-300 ${
                     isImageExpanded ? 'scale-150 shadow-2xl' : 'scale-100'
                   }`}
@@ -130,24 +121,15 @@ export default function Home() {
                 />
                 <h1 className='self-start my-2 text-xl'>Daily Planner</h1>
                 <p className='self-start text-lg font'>
-                  Final Project of the Full Stack Web Development Bootcamp
+                  {t('secondTitleDailyPlanner')}
                 </p>
-                <p className='self-start my-2'>
-                  [ Currently improving the app and implementing TypeScript and
-                  Redux ]
-                </p>
-                <p className='my-2'>
-                  Designed to optimize the daily management of salons and beauty
-                  centers. It allows scheduling appointments, managing clients
-                  and services, and offers a complete history of the activities
-                  performed.
-                </p>
+                <p className='self-start my-2'>{t('thirdTitleDailyPlanner')}</p>
+                <p className='mt-4 mb-2'>{t('descriptionDailyPlanner')}</p>
                 <p className='mt-4 mb-2 self-start'>
-                  Technologies used:
+                  {t('technologiesUsed')}
                   <br />
                   <br />
-                  React, Tailwind CSS, Node.js, Express.js, MongoDB, Mocha,
-                  Chai.js, Git, GitHub.
+                  {t('technologiesDailyPlanner')}
                 </p>
                 <div className='flex justify-center flex-wrap items-center self-end'>
                   <Link
@@ -177,37 +159,29 @@ export default function Home() {
           <div className='sm:max-w-[40rem]'>
             <div className='flex flex-col justify-center items-center'>
               <h1 className='text-xl shadow-xl bg-stone py-2 px-4 rounded self-star w-full'>
-                About Me
+                {t('aboutMe')}
               </h1>
               <div className='my-4 shadow-xl bg-stone rounded py-2 px-4 flex flex-col justify-center items-center'>
                 <p className='my-4'>
-                  Hello, I&lsquo;m Jose, a creative developer passionate about
-                  turning ideas into smooth and engaging user experiences. I
-                  enjoy creating efficient web applications that are not only
-                  functional but also provide a visually appealing experience
-                  focused on user needs.
+                  {t('descriptionAboutMe1')}
                   <br />
                   <br />
-                  In my work, I prioritize clean and maintainable code, and I
-                  always seek to offer scalable and accessible solutions. I like
-                  to be constantly learning and enjoy keeping up with web
-                  development trends, whether it&lsquo;s mastering new
-                  frameworks or exploring modern design approaches.
+                  {t('descriptionAboutMe2')}
                   <br />
                   <br />
-                  When I&lsquo;m not programming, you can find me enjoying
-                  outdoor activities, playing sports or sharing moments with
-                  friends. I value these experiences very much, as they help me
-                  to recharge my batteries and maintain a balance between
-                  personal and professional life.
+                  {t('descriptionAboutMe3')}
                 </p>
-                <p className='my-2 self-start'>
-                  Technical Skills:
+                <p className='mt-4 mb-2 self-start'>
+                  {t('technicalSkills')}
                   <br />
                   <br />
-                  JavaScript (JS), TypeScript, Node.js, React, Next.js, Redux
-                  Toolkit, Tailwind CSS, Express.js, HTML, CSS, Vite, npm,
-                  MongoDB, Mocha, Chai.js, Git, GitHub, VS Code, Figma.
+                  {t('myTechnologies')}
+                </p>
+                <p className='mt-4 mb-2 self-start'>
+                  {t('softSkills')}
+                  <br />
+                  <br />
+                  {t('mySoftSkills')}
                 </p>
               </div>
             </div>
