@@ -10,6 +10,7 @@ import { FaLinkedin } from 'react-icons/fa'
 import { GrZoomIn } from 'react-icons/gr'
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import LocaleSwitcher from '@/components/ui/LocaleSwitcher'
 
 export default function Home() {
   const t = useTranslations('HomePage')
@@ -39,8 +40,7 @@ export default function Home() {
             <h1 className='text-2xl text-center'>FULL SATCK WEB DEVELOPER</h1>
           </div>
         </div>
-        <div className='flex justify-center items-center p-2 bg-white'></div>
-        <div className='flex bg-stone rounded justify-center items-center flex-wrap p-2'>
+        <div className='flex justify-center items-center p-2 bg-white'>
           <Link
             className='w-6 h-6 mx-6'
             href={'https://www.linkedin.com/in/j0sep0z0'}
@@ -57,6 +57,9 @@ export default function Home() {
           >
             <FaGithub className='w-6 h-6' />
           </Link>
+        </div>
+        <div className='flex bg-stone rounded justify-center items-center flex-wrap p-2'>
+          <LocaleSwitcher />
         </div>
       </header>
       <main onClick={resetImageSize} className='grid grid-cols-1'>

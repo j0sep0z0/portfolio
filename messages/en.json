@@ -18,5 +18,15 @@
     "technologiesGoPass": "React, TypeScript, Redux Toolkit, Axios, Tailwind CSS, Git, GitHub.",
     "technologiesUsed": "Tecnologies used:",
     "thirdTitleDailyPlanner": "[ Currently improving the app and implementing TypeScript and Redux ]"
+  },
+  "LocaleSwitcher": {
+    "label": "Select Language",
+    "locale": {
+      "cat": "Catalan",
+      "en": "English",
+      "es": "Spanish",
+      "fr": "French",
+      "pt": "Portuguese"
+    }
   }
 }
