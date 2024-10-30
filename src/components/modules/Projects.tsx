@@ -37,6 +37,7 @@ export const Projects = ({
                 isImageExpanded ? 'scale-150 shadow-2xl' : 'scale-100'
               }`}
               onClick={toggleImageSize}
+              priority
             />
             <GrZoomIn
               className='inset-0 h-5 w-5 cursor-pointer'
