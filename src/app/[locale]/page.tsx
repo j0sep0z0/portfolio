@@ -1,6 +1,5 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 
 import { AboutMe } from '@/components/modules/AboutMe'
