@@ -1,6 +1,7 @@
 {
   "HomePage": {
     "aboutMe": "Sobre mí",
+    "code": "Código",
     "dateGoPass": "[ Septiembre 2024 – Presente | Remoto | Valencia, España ]",
     "descriptionAboutMe1": "Hola, soy Jose, un desarrollador creativo apasionado por convertir ideas en experiencias de usuario fluidas y atractivas. Disfruto creando aplicaciones web eficientes que no solo son funcionales, sino que también brindan una experiencia visualmente atractiva centrada en las necesidades del usuario.",
     "descriptionAboutMe2": "En mi trabajo, priorizo el código limpio y mantenible, y siempre busco ofrecer soluciones escalables y accesibles. Me gusta estar en constante aprendizaje y disfruto manteniéndome al día con las tendencias de desarrollo web, ya sea dominando nuevos frameworks o explorando enfoques de diseño modernos.",
@@ -17,7 +18,8 @@
     "technologiesDailyPlanner": "React, Tailwind CSS, Node.js, Express.js, MongoDB, Mocha, Chai.js, Git, GitHub.",
     "technologiesGoPass": "React, TypeScript, Redux Toolkit, Axios, Tailwind CSS, Git, GitHub.",
     "technologiesUsed": "Tecnologías utilizadas:",
-    "thirdTitleDailyPlanner": "[ Actualmente mejorando la aplicación e implementando TypeScript y Redux ]"
+    "thirdTitleDailyPlanner": "[ Actualmente mejorando la aplicación e implementando TypeScript y Redux ]",
+    "visitSite": "Visitar el sitio web"
   },
   "LocaleSwitcher": {
     "label": "Seleccionar idioma",
