@@ -1,6 +1,7 @@
 {
   "HomePage": {
     "aboutMe": "Sobre mi",
+    "code": "Codi",
     "dateGoPass": "[ Setembre 2024 – Present | Remot | València, Espanya ]",
     "descriptionAboutMe1": "Hola, sóc en Jose, un desenvolupador creatiu apassionat per convertir idees en experiències d'usuari suaus i atractives. M'agrada crear aplicacions web eficients que no només siguin funcionals, sinó que també proporcionin una experiència visualment atractiva centrada en les necessitats de l'usuari.",
     "descriptionAboutMe2": "En el meu treball, prioritzo el codi net i mantenible, i sempre busco oferir solucions escalables i accessibles. M'agrada estar constantment aprenent i gaudeixo mantenint-me al dia amb les tendències del desenvolupament web, ja sigui dominant nous frameworks o explorant enfocaments de disseny moderns.",
@@ -17,7 +18,8 @@
     "technologiesDailyPlanner": "React, Tailwind CSS, Node.js, Express.js, MongoDB, Mocha, Chai.js, Git, GitHub.",
     "technologiesGoPass": "React, TypeScript, Redux Toolkit, Axios, Tailwind CSS, Git, GitHub.",
     "technologiesUsed": "Tecnologies utilitzades:",
-    "thirdTitleDailyPlanner": "[ Actualment millorant l'aplicació i implementant TypeScript i Redux ]"
+    "thirdTitleDailyPlanner": "[ Actualment millorant l'aplicació i implementant TypeScript i Redux ]",
+    "visitSite": "Visita el lloc web"
   },
   "LocaleSwitcher": {
     "label": "Seleccionar Idioma",
