@@ -4,7 +4,7 @@ import { Locale } from './routing'
 import { routing } from './routing'
 
 // Define un tipo para los locales permitidos
-// type Locale = 'cat' | 'en' | 'es' | 'fr' | 'pt'
+// type Locale = 'cat' | 'en' | 'es' | 'pt'
 
 export default getRequestConfig(async ({ requestLocale }) => {
   // This typically corresponds to the `[locale]` segment
