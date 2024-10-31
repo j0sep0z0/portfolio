@@ -3,13 +3,13 @@ import { defineRouting } from 'next-intl/routing'
 
 export const routing = defineRouting({
   // A list of all locales that are supported
-  locales: ['cat', 'en', 'es', 'fr', 'pt'],
+  locales: ['cat', 'en', 'es', 'pt'],
 
   // Used when no locale matches
   defaultLocale: 'en',
 })
 
-export type Locale = 'cat' | 'en' | 'es' | 'fr' | 'pt'
+export type Locale = 'cat' | 'en' | 'es' | 'pt'
 
 // Lightweight wrappers around Next.js' navigation APIs
 // that will consider the routing configuration
