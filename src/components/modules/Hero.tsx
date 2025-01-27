@@ -5,6 +5,7 @@ import { Github, Linkedin, Mail } from 'lucide-react'
 import Image from 'next/image'
 
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -29,30 +30,30 @@ export function Hero() {
             </p>
             <div className='flex space-x-4'>
               <Button variant='outline' size='icon' asChild>
-                <a
+                <Link
                   href='https://github.com/j0sep0z0'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
                   <Github className='h-5 w-5' />
                   <span className='sr-only'>GitHub</span>
-                </a>
+                </Link>
               </Button>
               <Button variant='outline' size='icon' asChild>
-                <a
+                <Link
                   href='https://www.linkedin.com/in/j0sep0z0/'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
                   <Linkedin className='h-5 w-5' />
                   <span className='sr-only'>LinkedIn</span>
-                </a>
+                </Link>
               </Button>
               <Button variant='outline' size='icon' asChild>
-                <a href='mailto:josepozovilalta@gmail.com'>
+                <Link href='mailto:josepozovilalta@gmail.com'>
                   <Mail className='h-5 w-5' />
                   <span className='sr-only'>Email</span>
-                </a>
+                </Link>
               </Button>
             </div>
           </motion.div>
