@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 @layer base {
   :root {
-    --background: 0 0% 98%; 
-    --foreground: 0 0% 12%; 
+    --background: 0 0% 98%;
+    --foreground: 0 0% 12%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
@@ -20,7 +20,7 @@ body {
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
-    --accent: 210 60% 55%; 
+    --accent: 210 60% 55%;
     --accent-foreground: 0 0% 9%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -36,9 +36,9 @@ body {
   }
 
   .dark {
-    --background: 0 0% 12%; 
-    --foreground: 0 0% 98%; 
-    --card: 0 0% 3.9%; 
+    --background: 0 0% 12%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
@@ -48,8 +48,8 @@ body {
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 210 50% 60%; 
-    --accent-foreground: 0 0% 98%; 
+    --accent: 210 50% 60%;
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 14.9%;
@@ -72,35 +72,30 @@ body {
     @apply bg-background text-foreground;
   }
 
-
   p {
     @apply text-muted-foreground;
   }
 
-  a, button {
+  a,
+  button {
     @apply text-accent;
   }
 
-  
-  .dark a, .dark button {
+  .dark a,
+  .dark button {
     @apply text-accent;
   }
 }
 
 .card:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-5px);
 }
 
 .card-hover {
-  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-2;
+  @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-lg;
 }
 
-
-
 .section-title {
-  @apply mb-4 text-primary;
-} 
-
-
-
+  @apply mb-4 text-3xl font-bold text-primary;
+}
