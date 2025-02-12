@@ -31,7 +31,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-10">
       <div className="container mx-auto px-4">
-        <h2 className="section-title">Proyectos</h2>
+        <h2 className="section-title">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <motion.div
