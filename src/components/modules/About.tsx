@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export function About() {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-10">
       <div className="container mx-auto px-4">
         <h2 className="section-title">About Me</h2>
         <motion.div

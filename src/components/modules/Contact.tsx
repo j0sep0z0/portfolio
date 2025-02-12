@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-10">
       <div className="container mx-auto px-4">
         <h2 className="section-title">Contact</h2>
         <motion.div

@@ -25,7 +25,7 @@ const skills = {
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-10">
       <div className="container mx-auto px-4">
         <h2 className="section-title">Skills</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
