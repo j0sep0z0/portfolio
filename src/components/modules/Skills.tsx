@@ -19,8 +19,8 @@ const skills = {
     "Figma",
   ],
   backend: ["Node.js", "Express.js", "MongoDB", "Mongoose"],
-  tools: ["Git", "GitHub", "VS Code", "npm"],
   testing: ["Jest", "Mocha", "Chai.js"],
+  tools: ["Git", "GitHub", "VS Code", "npm"],
 }
 
 export function Skills() {
