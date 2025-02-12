@@ -97,5 +97,5 @@ body {
 }
 
 .section-title {
-  @apply mb-4 text-3xl font-bold text-primary;
+  @apply mb-4 text-3xl font-light text-primary;
 }
