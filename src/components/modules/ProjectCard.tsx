@@ -1,3 +1,5 @@
+"use client"
+
 import { ExternalLink, Github } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
@@ -17,13 +19,8 @@ interface Project {
 export default function ProjectCard({ project }: { project: Project }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const handleImageClick = () => {
-    setIsModalOpen(true)
-  }
-
-  const closeModal = () => {
-    setIsModalOpen(false)
-  }
+  const handleImageClick = () => setIsModalOpen(true)
+  const closeModal = () => setIsModalOpen(false)
 
   return (
     <>
@@ -34,16 +31,17 @@ export default function ProjectCard({ project }: { project: Project }) {
           width={300}
           height={200}
           className="w-full h-48 object-cover cursor-pointer"
-          onClick={handleImageClick} // Abre el modal al hacer clic
+          onClick={handleImageClick}
         />
         <CardHeader>
           <CardTitle className="text-xl">{project.title}</CardTitle>
         </CardHeader>
         <CardContent className="flex-1 flex flex-col justify-between">
           <div>
-            <p className="text-lg text-muted-foreground line-clamp-3">
+            <p className="text-lg text-muted-foreground lg:line-clamp-3">
               {project.description}
             </p>
+
             {project.technologies && (
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (
@@ -86,19 +84,15 @@ export default function ProjectCard({ project }: { project: Project }) {
         </CardContent>
       </Card>
 
-      {/* Modal */}
       {isModalOpen && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
-          onClick={closeModal} // Cierra el modal al hacer clic fuera
+          onClick={closeModal}
         >
-          <div
-            className="relative"
-            onClick={(e) => e.stopPropagation()} // Evita que el clic dentro del modal cierre el modal
-          >
+          <div className="relative" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={closeModal}
-              className="absolute top-2  right-4 text-white text-4xl"
+              className="absolute top-2 right-4 text-white text-4xl"
             >
               &times;
             </button>
