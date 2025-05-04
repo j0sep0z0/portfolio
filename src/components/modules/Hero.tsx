@@ -21,10 +21,10 @@ export default function Hero() {
             <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold mb-4">
               Jose Pozo
             </h1>
-            <h2 className="text-xl md:text-2xl text-muted-foreground mb-4">
+            <h2 className="text-4xl md:text-2xl text-muted-foreground mb-4">
               Creative Full Stack Developer
             </h2>
-            <p className="text-xl text-muted-foreground mb-6 max-w-md">
+            <p className="text-2xl text-muted-foreground mb-6 max-w-md">
               Transforming ideas into unique digital experiences through
               creativity, design, and innovative development.
             </p>
