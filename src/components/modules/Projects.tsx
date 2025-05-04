@@ -8,7 +8,16 @@ const projects: Project[] = [
     description:
       "An innovative mobile and web app that automates social media content creation with AI-powered editing workflows, enabling users to produce posts featuring eye-catching videos and images in seconds.",
     image: "/proweb.jpg?height=200&width=300",
-    technologies: ["React Native", "Expo", "Next.js", "TensorFlow.js"],
+    technologies: [
+      "Expo",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Axios",
+      "Tailwind CSS",
+    ],
     liveLink: "https://rkiveai.com/",
     // githubLink: "#",
   },

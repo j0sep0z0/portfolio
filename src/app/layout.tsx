@@ -4,7 +4,6 @@ import { Poppins } from "next/font/google"
 import { cn } from "@/lib/utils"
 
 import "./globals.css"
-import { ThemeProvider } from "./providers"
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -14,13 +13,23 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Jose Pozo | Creative Full Stack Web Developer",
-  description: "Portfolio of Jose Pozo, a creative Full Stack Web Developer based in Barcelona",
+  description:
+    "Portfolio of Jose Pozo, a creative Full Stack Web Developer based in Barcelona",
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={cn(poppins.className, "min-h-screen bg-background text-foreground antialiased")}>
+      <body
+        className={cn(
+          poppins.className,
+          "min-h-screen bg-background text-foreground antialiased"
+        )}
+      >
         {children}
       </body>
     </html>
