@@ -12,9 +12,9 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Jose Pozo | Creative Full Stack Web Developer",
+  title: "Jose Pozo | Creative Full Stack Developer",
   description:
-    "Portfolio of Jose Pozo, a creative Full Stack Web Developer based in Barcelona",
+    "Portfolio of Jose Pozo, a creative Full Stack Developer based in Barcelona",
 }
 
 export default function RootLayout({
