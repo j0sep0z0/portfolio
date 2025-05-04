@@ -8,7 +8,7 @@ export function formatDate(str: string) {
 export function computeDuration(start: string, end?: string) {
   const s = new Date(start)
   const e = end ? new Date(end) : new Date()
-  let totalMonths =
+  const totalMonths =
     (e.getFullYear() - s.getFullYear()) * 12 + (e.getMonth() - s.getMonth()) + 1
   const years = Math.floor(totalMonths / 12)
   const months = totalMonths % 12
