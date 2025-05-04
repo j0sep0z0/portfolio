@@ -93,15 +93,15 @@ export default function Experience() {
                     <CardTitle className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                       <span className="text-xl font-semibold">{exp.title}</span>
                       <div className="flex flex-col items-end">
-                        <span className="text-sm text-muted-foreground">
+                        <span className="text-md text-muted-foreground">
                           {dateRange}
                         </span>
-                        <span className="text-sm text-muted-foreground">
+                        <span className="text-md text-muted-foreground">
                           {duration}
                         </span>
                       </div>
                     </CardTitle>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground text-xl">
                       <a
                         href={exp.companyUrl}
                         target="_blank"
@@ -113,12 +113,12 @@ export default function Experience() {
                     </p>
                   </CardHeader>
                   <CardContent>
-                    <p className="mb-4">{exp.description}</p>
+                    <p className="mb-4 text-lg">{exp.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-2 py-1 text-xs font-medium bg-secondary text-secondary-foreground rounded-full"
+                          className="px-2 py-1 text-sm font-medium bg-secondary text-secondary-foreground rounded-md"
                         >
                           {tech}
                         </span>

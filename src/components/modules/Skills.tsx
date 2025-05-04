@@ -48,7 +48,7 @@ export default function Skills() {
                     {skillList.map((skill) => (
                       <span
                         key={skill}
-                        className="px-2 py-1 text-xs font-medium bg-secondary text-secondary-foreground rounded-full"
+                        className="px-2 py-1 text-sm font-medium bg-secondary text-secondary-foreground rounded-md"
                       >
                         {skill}
                       </span>

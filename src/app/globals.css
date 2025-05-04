@@ -45,11 +45,13 @@ body {
 
   a,
   button {
-    @apply text-accent;
+    color: hsl(50 100% 60%);
+    text-shadow: 0 0 8px hsl(var(--accent) / 0.8);
   }
 
   a:hover,
   button:hover {
+    color: hsl(50 100% 60%);
     text-shadow: 0 0 8px hsl(var(--accent) / 0.8);
   }
 }
@@ -66,6 +68,6 @@ body {
 }
 
 .section-title {
-  @apply mb-4 text-3xl font-light text-primary;
+  @apply mb-4 text-2xl font-light text-primary;
   text-shadow: 0 0 10px hsl(var(--primary) / 0.8);
 }

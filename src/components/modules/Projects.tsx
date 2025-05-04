@@ -25,7 +25,7 @@ const projects: Project[] = [
     title: "Reffindr",
     description:
       "An intuitive platform matching outgoing and incoming tenants, featuring real-time updates and secure transaction flows for seamless rentals.",
-    image: "/proweb.jpg?height=200&width=300",
+    image: "/rffindr.png",
     technologies: [
       "React",
       "TypeScript",
@@ -37,13 +37,13 @@ const projects: Project[] = [
       "Vite",
     ],
     //liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/IgrowkerTraining/i004-reffindr-back-nodejs",
   },
   {
     title: "GoPass",
     description:
       "A robust ticket authentication app for Argentine football, employing QR verification and blockchain to eliminate fraud.",
-    image: "/proweb.jpg?height=200&width=300",
+    image: "/goPass.png",
     technologies: [
       "React",
       "TypeScript",

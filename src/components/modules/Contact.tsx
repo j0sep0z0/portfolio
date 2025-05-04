@@ -7,6 +7,25 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
+const contactLinks = [
+  {
+    href: "mailto:josepozovilalta@gmail.com",
+    icon: Mail,
+    text: "josepozovilalta@gmail.com",
+  },
+  {
+    href: "tel:+34685641043",
+    icon: Phone,
+    text: "+34 685 64 10 43",
+  },
+  {
+    href: "https://www.google.com/maps?q=Begues+Barcelona",
+    icon: MapPin,
+    text: "Begues (Barcelona)",
+    target: "_blank", // Solo para enlaces externos
+  },
+]
+
 export default function Contact() {
   return (
     <section id="contact" className="py-10">
@@ -20,48 +39,27 @@ export default function Contact() {
         >
           <Card className="overflow-hidden card-hover">
             <CardHeader>
-              <CardTitle className="text-xl font-semibold">
+              <CardTitle className="text-2xl font-semibold">
                 Get in touch
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="flex items-center gap-4">
-                <Link href="mailto:josepozovilalta@gmail.com">
-                  <Button variant="outline" size="icon">
-                    <Mail className="h-4 w-4" />
-                  </Button>
-                </Link>
-                <Link
-                  href="mailto:josepozovilalta@gmail.com"
-                  className="hover:underline"
-                >
-                  josepozovilalta@gmail.com
-                </Link>
-              </div>
-              <div className="flex items-center gap-4">
-                <Link href="tel:+34685641043">
-                  <Button variant="outline" size="icon">
-                    <Phone className="h-4 w-4" />
-                  </Button>
-                </Link>
-                <Link href="tel:+34685641043" className="hover:underline">
-                  +34 685 64 10 43
-                </Link>
-              </div>
-              <div className="flex items-center gap-4">
-                <Link href="https://www.google.com/maps?q=Begues+Barcelona">
-                  <Button variant="outline" size="icon" className="no-hover">
-                    <MapPin className="h-4 w-4" />
-                  </Button>
-                </Link>
-                <Link
-                  href="https://www.google.com/maps?q=Begues+Barcelona"
-                  target="_blank"
-                  className="hover:underline"
-                >
-                  Begues (Barcelona)
-                </Link>
-              </div>
+              {contactLinks.map((link, index) => (
+                <div key={index} className="flex items-center gap-4 ">
+                  <Link href={link.href} target={link.target || undefined}>
+                    <Button variant="outline" size="icon">
+                      <link.icon className="h-4 w-4" />
+                    </Button>
+                  </Link>
+                  <Link
+                    href={link.href}
+                    target={link.target || undefined}
+                    className="hover:underline text-xl"
+                  >
+                    {link.text}
+                  </Link>
+                </div>
+              ))}
             </CardContent>
           </Card>
         </motion.div>
