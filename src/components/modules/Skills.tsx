@@ -8,9 +8,11 @@ const skills = {
   frontend: [
     "React",
     "Next.js",
+    "Expo",
     "JavaScript",
     "TypeScript",
     "Redux Toolkit",
+    "Zustand",
     "Tailwind CSS",
     "HTML",
     "CSS",
@@ -23,7 +25,7 @@ const skills = {
   tools: ["Git", "GitHub", "VS Code", "npm"],
 }
 
-export function Skills() {
+export default function Skills() {
   return (
     <section id="skills" className="py-10">
       <div className="container mx-auto px-4">
@@ -39,7 +41,9 @@ export function Skills() {
             >
               <Card className="h-full card-hover">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4 capitalize">{category}</h3>
+                  <h3 className="text-xl font-semibold mb-4 capitalize">
+                    {category}
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {skillList.map((skill) => (
                       <span

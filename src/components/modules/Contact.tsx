@@ -7,7 +7,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-export function Contact() {
+export default function Contact() {
   return (
     <section id="contact" className="py-10">
       <div className="container mx-auto px-4">
@@ -20,7 +20,9 @@ export function Contact() {
         >
           <Card className="overflow-hidden card-hover">
             <CardHeader>
-              <CardTitle className="text-xl font-semibold">Get in touch</CardTitle>
+              <CardTitle className="text-xl font-semibold">
+                Get in touch
+              </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center gap-4">
@@ -29,7 +31,10 @@ export function Contact() {
                     <Mail className="h-4 w-4" />
                   </Button>
                 </Link>
-                <Link href="mailto:josepozovilalta@gmail.com" className="hover:underline">
+                <Link
+                  href="mailto:josepozovilalta@gmail.com"
+                  className="hover:underline"
+                >
                   josepozovilalta@gmail.com
                 </Link>
               </div>
@@ -49,7 +54,11 @@ export function Contact() {
                     <MapPin className="h-4 w-4" />
                   </Button>
                 </Link>
-                <Link href="https://www.google.com/maps?q=Begues+Barcelona" target="_blank" className="hover:underline">
+                <Link
+                  href="https://www.google.com/maps?q=Begues+Barcelona"
+                  target="_blank"
+                  className="hover:underline"
+                >
                   Begues (Barcelona)
                 </Link>
               </div>
