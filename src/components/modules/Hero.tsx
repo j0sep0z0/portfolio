@@ -18,13 +18,13 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="mb-8 md:mb-0 md:mr-8"
           >
-            <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold mb-4">
+            <h1 className="text-6xl md:text-6xl lg:text-6xl font-bold mb-4">
               Jose Pozo
             </h1>
             <h2 className="text-4xl md:text-2xl text-muted-foreground mb-4">
               Creative Full Stack Developer
             </h2>
-            <p className="text-2xl text-muted-foreground mb-6 max-w-md">
+            <p className="text-xl text-muted-foreground mb-6 max-w-md">
               Transforming ideas into unique digital experiences through
               creativity, design, and innovative development.
             </p>
