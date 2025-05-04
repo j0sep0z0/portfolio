@@ -11,7 +11,7 @@ interface Project {
   title: string
   description: string
   image: string
-  technologies?: string[]
+  technologies: string[]
   liveLink?: string
   githubLink?: string
 }
@@ -41,19 +41,16 @@ export default function ProjectCard({ project }: { project: Project }) {
             <p className="text-lg text-muted-foreground lg:line-clamp-3">
               {project.description}
             </p>
-
-            {project.technologies && (
-              <div className="mt-4 flex flex-wrap gap-2">
-                {project.technologies.map((tech) => (
-                  <span
-                    key={tech}
-                    className="px-2 py-1 text-sm font-medium bg-secondary text-secondary-foreground rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            )}
+            <div className="mt-4 flex flex-wrap gap-2">
+              {project.technologies.map((tech) => (
+                <span
+                  key={tech}
+                  className="px-2 py-1 text-sm font-medium bg-secondary text-secondary-foreground rounded-md"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
           <div className="flex justify-end space-x-2 mt-8">
             {project.liveLink && (
