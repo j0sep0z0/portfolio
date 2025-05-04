@@ -54,7 +54,7 @@ export default function Contact() {
                   <Link
                     href={link.href}
                     target={link.target || undefined}
-                    className="hover:underline text-xl sm:text-lg"
+                    className="hover:underline text-lg sm:text-xl"
                   >
                     {link.text}
                   </Link>
